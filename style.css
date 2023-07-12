@@ -38,38 +38,6 @@ html {
 	
 }
 
-@media only screen and (max-width: 767px) {
-  .log .img-cap {
-    display: none;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .cap {
-    display: none;
-  }
-}
-@media only screen {
-  .nav-menu {
-    width: 100%;
-  }
-}
-
-@media only screen {
-  body {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .partwo {
-    width: 100%;
-		
-  }
-}
-@media only screen and (max-width: 767px) {
-  .moo {
-		padding-left: 25px;
-  }
-}
 
 .nav-menu li {
   margin: 0 10px;
@@ -135,8 +103,8 @@ h3{
 	display: flex;
 	flex-direction: row;
 	margin-top: 10rem;
-	margin-left: 5rem;
-	margin-right: 5rem;
+	margin-left: 10rem;
+	margin-right: 10rem;
 	margin-bottom: 5rem;
 	justify-content: space-between;
 
@@ -296,10 +264,11 @@ span{
 	margin-top: 4rem;
 }
 #skills{
-	margin-top: 3rem;
+	margin-top: 0rem;
 	font-size: 40px;
 	font-family: 'Kalam', cursive;
 	color: var(--secondary-color);
+	margin-left: 6rem;
 }
 
 .contact-box {
@@ -381,4 +350,70 @@ svg:hover{
 }
 .face{
 	margin-right: 1rem;
+}
+/* Adjustments for Responsive Design */
+
+@media only screen and (max-width: 767px) {
+  .partwo,
+  .parthree {
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+	#skills{
+		margin-left: 0;
+	}
+
+  .about,
+  .skills {
+    width: 100%;
+  }
+
+  .img-cap,
+  .skills {
+    margin-left: 0;
+  }
+
+  .me {
+    height: auto;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .ola,
+  .skk {
+    font-size: 16px;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav-menu {
+    height: auto;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu a {
+    margin: 5px 0;
+  }
+
+  .chess {
+    width: 100%;
+  }
+
+  .parthree {
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 3rem;
+  }
 }
